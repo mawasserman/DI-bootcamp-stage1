@@ -18,7 +18,7 @@ h1 {
 article {
   margin: auto;
   box-sizing: border-box;
-  border: 2px solid orange;
+  border: 0px solid orange;
   align-items: center;
   width: 100%;
   padding: 20px 10px;
@@ -84,7 +84,7 @@ h5 {
   float: left;
   overflow-clip-margin: content-box;
   box-sizing: border-box;
-  border: 2px solid orange;
+  border: 2px solid #FFF;
   width: 200px;
   height: 200px;
   border-radius: 100px;
