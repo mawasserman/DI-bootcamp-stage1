@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Picard</title>
+  <title>Jean-Luc Picard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="picard.css"> 
 </head>
 
 <body>
@@ -18,8 +19,11 @@
   <!-- Navigation bar-->
   <nav class="navigation deep-orange accent-1" id="home">
     <a href="#home" class="links">Home</a>
-    <a href="#introduction" class="links">Introduction</a><a href="#life" class="links">Life Events</a>
+    <a href="#introduction" class="links">Introduction</a>
+    <a href="#life" class="links">Life Events</a>
+    <a href="#romance" class="links">Romance</a>
     <a href="#quotes" class="links">Quotes</a>
+    <a href="#contact" class="links">Contact us</a>
     <a href="#more" class="links">More</a>
   </nav>
 
@@ -105,7 +109,53 @@
           <a href="#home" class="right-align waves-effect waves-light btn-flat"><i class="material-icons">arrow_upward</i>Back to top</a>
         </div>
     </article>
-
+    <!-- Romances in chronological order-->
+    <article id="romance">
+      <h4 class="center-align">Romance</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>WHO</th>
+            <th>WHEN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lwaxana Troi</td>
+            <td>2365</td>
+          </tr>
+          <tr>
+            <td>Vash</td>
+            <td>2367</td>
+          </tr>
+          <tr>
+            <td>Kamala</td>
+            <td>2368</td>
+          </tr>
+          <tr>
+            <td>Nella Daren</td>
+            <td>2369</td>
+          </tr>
+          <tr>
+            <td>Anij</td>
+            <td>2375</td>
+          </tr>
+          <tr>
+            <td>Beverly Crusher</td>
+            <td>Complicated...</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Laris</td>
+            <td>2401</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="right-align">
+        <a href="#home" class="right-align waves-effect waves-light btn-flat"><i class="material-icons">arrow_upward</i>Back to top</a>
+      </div>
+    </article>
     <!-- Memorable quotes-->
     <article id="quotes">
       <h4 class="center-align">Quotes</h4>
@@ -135,8 +185,61 @@
           <a href="#home" class="right-align waves-effect waves-light btn-flat"><i class="material-icons">arrow_upward</i>Back to top</a>
         </div>
     </article>
-  </main>
 
+    <!-- Form for contact-->
+    <article id="contact">
+      <h4 class="center-align">Contact us</h4>
+      <form method="get"">
+           First Name: <input type="text" name="firstname">
+
+        Last Name:<input type="text" name="lastname">
+
+        Email:<input type="email" name="email">
+
+        Date Of Birth:<input type="date" name="dateBirth">
+
+        <h5>Wanna know more about Star Trek?</h5>
+        <h6>Answer the form to get a recommendation</h6>
+        <span>What would you prefer?</span>
+        <div>Series
+          <input type="checkbox" name="series">
+        </div>
+        <div>
+          Movies
+          <input type="checkbox" name="movies">
+        </div>
+        <div>
+          Old-school<input type="checkbox" name="old">
+        </div>
+        <div>
+          Recent<input type="checkbox" name="recent">
+        </div>
+        <br>
+        <span>What is the main personality trait you look in a captain?</span>
+        <div>
+          Courageous<input type="radio" name="personality" value="courageous">
+        </div>
+        <div>
+          Diplomat<input type="radio" name="personality" value="diplomat">
+        </div>
+        <div>
+          Flexible
+          <input type="radio" name="personality" value="flexible">
+        </div>
+        <div>
+          Brilliant<input type="radio" name="personality" value="brilliant">
+        </div>
+
+        <input type="submit" value="Tell me what to watch!">
+        <input type="reset" value="I changed my mind...">
+        </div>
+      </form>
+
+      <div class="right-align">
+        <a href="#home" class="right-align waves-effect waves-light btn-flat"><i class="material-icons">arrow_upward</i>Back to top</a>
+      </div>
+    </article>
+  </main>
   <!-- Footer -->
   <footer id="more" class="center-align">
     <h5>To learn more about Jean-Luc Picard and the Star Trek universe, visit:</h5>
