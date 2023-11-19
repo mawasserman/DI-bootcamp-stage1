@@ -1,14 +1,14 @@
-/* setting color to background*/
+/* adding color to background*/
 body {
   background-color: #cccccc;
 }
 
-/* setting font for the whole file (Bebas Neue), except the h1 */
+/* now EVERYTHING is Bebas Neue, except the h1 */
 * {
   font-family: "Bebas Neue", sans-serif;
 }
 
-/* h1 font Cinzel, important */
+/* making header font unchangeble even with cascading importance */
 h1 {
   text-decoration: underline;
   font-family: "Cinzel", serif !important;
@@ -56,7 +56,8 @@ article {
 
 /* making some color change */
 #introduction,
-#quotes {
+#romance,
+#contact {
   background-color: #ff9e80;
   color: white;
 }
@@ -102,7 +103,7 @@ h5 {
   margin-bottom: 40px;
 }
 
-/* easter egg, hover with Picards facepalm on Google link */
+/* easter egg */
 a > div {
   display: none;
 }
