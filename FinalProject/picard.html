@@ -189,7 +189,8 @@
     <!-- Form for contact-->
     <article id="contact">
       <h4 class="center-align">Contact us</h4>
-      <form method="get"">
+      <h6>For more information about Picard, a complain or just a cup of coffee... just contact us, we like making friends</h6>
+      <form method="get" id="creepform">
            First Name: <input type="text" name="firstname">
 
         Last Name:<input type="text" name="lastname">
@@ -197,38 +198,78 @@
         Email:<input type="email" name="email">
 
         Date Of Birth:<input type="date" name="dateBirth">
+<input type="submit" value="Sign me in!">
+        <input type="reset" value="This was a little weird...">
+        </div>
+      </form>
 
+        <br>
+
+        <!--Form to know more about star trek-->
+        <form method="get" id="moreabout">
         <h5>Wanna know more about Star Trek?</h5>
         <h6>Answer the form to get a recommendation</h6>
         <span>What would you prefer?</span>
-        <div><label>Series
-          <input type="checkbox" name="series">
-        </div>
+
         <div>
-          <label>Movies</label>
-          <input type="checkbox" name="movies">
-        </div>
-        <div>
-          <label>Old-school</label><input type="checkbox" name="old">
-        </div>
-        <div>
-          <label>Recent</label><input type="checkbox" name="recent">
-        </div>
-        <br>
+          <label for="series">
+            <input type="checkbox" id="series" name="series">
+            <span>Series</span>
+          </label>
+      </div>
+
+      <div>
+        <label for="movies">
+          <input type="checkbox" id="movies" name="movies">
+          <span>Movies</span>
+        </label>
+    </div>
+
+    <div>
+      <label for="old">
+        <input type="checkbox" id="old" name="old">
+        <span>Old-school</span>
+      </label>
+  </div>
+
+  <div>
+    <label for="recent">
+      <input type="checkbox" id="recent" name="recent">
+      <span>Recent</span>
+    </label>
+</div>
+
         <span>What is the main personality trait you look in a captain?</span>
+       
+       
         <div>
-          <label>Courageous</label><input type="radio" name="personality" value="courageous">
-        </div>
+          <label>
+            <input class="with-gap" name="group1" type="radio" />
+            <span>Courageous</span>
+          </label>
+        </div> 
+       
         <div>
-          <label>Diplomat <input type="radio" name="personality" value="diplomat"> </label>
-        </div>
+          <label>
+            <input class="with-gap" name="group1" type="radio" />
+            <span>Diplomat</span>
+          </label>
+        </div> 
+       
         <div>
-          <label>Flexible</label>
-          <input type="radio" name="personality" value="flexible">
-        </div>
+          <label>
+            <input class="with-gap" name="group1" type="radio" />
+            <span>Flexible</span>
+          </label>
+        </div> 
+        
         <div>
-          <label>Brilliant</label><input type="radio" name="personality" value="brilliant">
-        </div>
+          <label>
+            <input class="with-gap" name="group1" type="radio" />
+            <span>Brilliant</span>
+          </label>
+        </div> 
+
 
         <input type="submit" value="Tell me what to watch!">
         <input type="reset" value="I changed my mind...">
@@ -238,6 +279,7 @@
       <div class="right-align">
         <a href="#home" class="right-align waves-effect waves-light btn-flat"><i class="material-icons">arrow_upward</i>Back to top</a>
       </div>
+    </form>
     </article>
   </main>
   <!-- Footer -->
