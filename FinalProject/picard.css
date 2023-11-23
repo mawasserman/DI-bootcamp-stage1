@@ -103,6 +103,9 @@ h5 {
   margin-bottom: 40px;
 }
 
+form span{
+  color: white
+}
 /* easter egg */
 a > div {
   display: none;
